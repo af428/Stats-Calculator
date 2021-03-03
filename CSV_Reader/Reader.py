@@ -18,7 +18,7 @@ class Reader:
     def reader(self, path):
         with open(absolute_path(path)) as csv_file:
             csv_reader = csv.reader(csv_file, delimiter=',')
-            first_line = csv_file.readline()  # to get rid of the first line i.e val1, val2, result
+            first_line = csv_file.readline()
             for row in csv_reader:
                 if '' in row:
                     row.remove('')
