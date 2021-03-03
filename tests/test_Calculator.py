@@ -1,6 +1,6 @@
 import unittest
 
-from src.calculator.calculator import Calculator
+from src import Calculator
 from CSV_Reader.Reader import Reader
 
 
