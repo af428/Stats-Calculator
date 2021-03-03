@@ -1,3 +1,5 @@
-@staticmethod
-def addition(a, b):
-    return float(a) + float(b)
+class Addition:
+
+    @staticmethod
+    def addition(a, b):
+        return float(a) + float(b)
