@@ -1,6 +1,7 @@
 import math
 
-class Squareroot:
+
+class SqaureRoot:
     @staticmethod
     def square_root(a):
         return math.sqrt(float(a))
