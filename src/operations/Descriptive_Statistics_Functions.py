@@ -5,4 +5,7 @@ from src.operations.square import Square
 from src.operations.square_root import SquareRoot
 from src.operations.subtraction import Subtraction
 
+import numpy as np
+import statistics
+
 
