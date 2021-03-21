@@ -26,5 +26,10 @@ class StatisticsFunctions():
         result = statistics.mode(data)
         return result
 
+    @staticmethod
+    def variance(data):
+        result = statistics.variance(data)
+        return result
+
 
 
