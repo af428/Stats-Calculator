@@ -18,7 +18,7 @@ class StatisticsFunctions():
 
     @staticmethod
     def median(data):
-        result = median(data)
+        result = statistics.median(data)
         return result
 
 
