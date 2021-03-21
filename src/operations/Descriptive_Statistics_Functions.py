@@ -21,6 +21,10 @@ class StatisticsFunctions():
         result = statistics.median(data)
         return result
 
+    @staticmethod
+    def mode(data):
+        result = statistics.mode(data)
+        return result
 
 
 
