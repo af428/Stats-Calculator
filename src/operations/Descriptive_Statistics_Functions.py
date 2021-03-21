@@ -8,4 +8,5 @@ from src.operations.subtraction import Subtraction
 
 import statistics
 
-class Mean():
+class StatisticsFunctions():
+    @staticmethod
