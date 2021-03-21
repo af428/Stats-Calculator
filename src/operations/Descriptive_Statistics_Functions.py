@@ -1,6 +1,8 @@
-from src.operations import addition
-from src.operations import divsion
-from src.operations import multiplication
-from src.operations import square
-from src.operations import square_root
-from src.operations import subtraction
+from src.operations.addition import Addition
+from src.operations.divsion import Division
+from src.operations.multiplication import Multiplication
+from src.operations.square import Square
+from src.operations.square_root import SquareRoot
+from src.operations.subtraction import Subtraction
+
+
