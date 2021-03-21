@@ -31,5 +31,8 @@ class StatisticsFunctions():
         result = statistics.variance(data)
         return result
 
-
+    @staticmethod
+    def standardDeviation(data):
+        result = statistics.stdev(data)
+        return result
 
