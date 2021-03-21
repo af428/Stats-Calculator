@@ -10,3 +10,7 @@ import statistics
 
 class StatisticsFunctions():
     @staticmethod
+    def mean(data):
+        result = statistics.mean(data)
+        return result
+
