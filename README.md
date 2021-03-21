@@ -6,6 +6,6 @@ second calculator, deleted first one due to issues
 
 # Contributers
 
-Alexandra Feeley
-Charles Wicklund
+Alexandra Feeley,
+Charles Wicklund,
 Luka Dragoljic
