@@ -14,4 +14,16 @@ class RandomGenerator:
         return randomNumberWithSeed.randomNumSeed(first, last, seed).getResult()
 
     def randomNumsSeed(self, first, last, n, seed):
-        return randomNumberWithSeed.randomNumSeed(first, last, seed).getResult()
+        return randomNumbersWithSeed.randomNumsSeed(first, last, n, seed).getResult()
+
+    def randomItemList(self, array):
+        return randItemFromList.randomItemList(array)
+
+    def randomItemListSeed(self):
+        return
+
+    def randomItemsList(self):
+        return
+
+    def randomItemsListSeed(self):
+        return
