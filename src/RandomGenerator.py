@@ -1,5 +1,5 @@
 import random
-from src.randomOps import randomNumber, randomNumberWithSeed, randomNumbersWithSeed, randItemFromList, randItemFromListSeed, randItemsFromList, randItemsFromListSeed
+from src.randomOps import randomNumber, randomNumberWithSeed, randomNumbersWithSeed, randItemFromList, randItemsFromList, randItemFromListSeed, randItemsFromListSeed
 
 
 class RandomGenerator:
@@ -8,22 +8,23 @@ class RandomGenerator:
         pass
 
     def randomNum(self, first, last):
-        return randomNumber.randomNum(first, last).getResult()
+        randomNumber.randomNum.generateRand(first, last)
+        return randomNumber.randomNum.getResult()
 
     def randomNumSeed(self, first, last, seed):
-        return randomNumberWithSeed.randomNumSeed(first, last, seed).getResult()
+        return randomNumberWithSeed.randomNumSeed(first, last, seed).getNum()
 
     def randomNumsSeed(self, first, last, n, seed):
         return randomNumbersWithSeed.randomNumsSeed(first, last, n, seed).getResult()
 
-    def randomItemList(self, array):
-        return randItemFromList.randomItemList(array)
+    def randItemFromList(self, array):
+        return randItemFromList.randItemFromList(array).getItem()
 
-    def randomItemListSeed(self):
-        return
+    def randItemsFromList(self, n, array):
+        return randItemsFromList.randItemsFromList(n, array).getItem()
 
-    def randomItemsList(self):
-        return
+    def randItemFromListSeed(self, array, seed):
+        return randItemFromListSeed.randItemFromList(array, seed).getItem()
 
-    def randomItemsListSeed(self):
-        return
+    def randItemsFromistSeed(self, n, array, seed):
+        return randItemsFromListSeed.randItemsFromListSeed(n, array, seed).getItem()
