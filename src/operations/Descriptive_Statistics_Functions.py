@@ -11,7 +11,7 @@ from src.randomOps import randomNumber, randomNumberWithSeed, randomNumbersWithS
 import statistics
 
 
-class StatisticsFunctions():
+class StatisticsFunctions:
 
     @staticmethod
     def mean(data):
@@ -37,4 +37,11 @@ class StatisticsFunctions():
     def standardDeviation(data):
         result = statistics.stdev(data)
         return result
+
+    @staticmethod
+    def z_Score(data):
+        x = randomNumbersWithSeed.randNumsSeed(data)
+        mean = statistics.mean(data)
+        stDev = statistics.stdev(data)
+        return ( x - mean) / stDev
 
