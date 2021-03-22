@@ -5,7 +5,7 @@ from src.RandomGenerator import RandomGenerator
 class RandomGeneratorTestCase(unittest.TestCase):
 
     def setUp(self):
-        self.RandomGenerator = RandomGenerator()
+        self.Randomizer = RandomGenerator()
         print('')
         print('setUp')
 
