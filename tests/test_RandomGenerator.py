@@ -3,6 +3,12 @@ from src.RandomGenerator import RandomGenerator
 
 
 class RandomGeneratorTestCase(unittest.TestCase):
-    def test_random_generator(self):
-        random_number = RandomGenerator.get_random_number(4)
-        self.assertEqual(random_number, 4)
+
+    def setUp(self):
+        self.RandomGenerator = RandomGenerator()
+        print('')
+        print('setUp')
+
+
+if __name__ == '__main__':
+    unittest.main()
