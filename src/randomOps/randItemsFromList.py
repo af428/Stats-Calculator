@@ -8,7 +8,7 @@ class randItemsFromList(randItemFromList):
         self.n = n
         self.generateChoices()
 
-    def generateChoices(self):
+    def generateItems(self):
         if self.n <= len(self.array):
             for i in range(self.n):
                 super().genItem()
