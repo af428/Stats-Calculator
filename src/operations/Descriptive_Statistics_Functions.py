@@ -5,7 +5,7 @@ from src.operations.square import Square
 from src.operations.square_root import SquareRoot
 from src.operations.subtraction import Subtraction
 from src.randomOps.randomNumberWithSeed import randomNumSeed
-
+from src.RandomGenerator import RandomGenerator
 
 import statistics
 
