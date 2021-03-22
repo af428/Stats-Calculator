@@ -6,6 +6,7 @@ from src.operations.square_root import SquareRoot
 from src.operations.subtraction import Subtraction
 from src.randomOps.randomNumberWithSeed import randomNumSeed
 from src.RandomGenerator import RandomGenerator
+from src.randomOps import randomNumber, randomNumberWithSeed, randomNumbersWithSeed, randItemFromList, randItemsFromList, randItemFromListSeed, randItemsFromListSeed
 
 import statistics
 
