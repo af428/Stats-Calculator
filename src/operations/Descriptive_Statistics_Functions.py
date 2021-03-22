@@ -4,6 +4,7 @@ from src.operations.multiplication import Multiplication
 from src.operations.square import Square
 from src.operations.square_root import SquareRoot
 from src.operations.subtraction import Subtraction
+from src.randomOps.randomNumberWithSeed import randomNumSeed
 
 
 import statistics
