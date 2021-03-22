@@ -7,7 +7,10 @@ class randomNumSeed(randomNum):
         self.first = first
         self.last = last
         random.seed(seed)
-        result = randomNum.generateRand()
+        self.result = randomNum.generateRand()
+    def getNum(self):
+        return self.result
+
 
 
 
