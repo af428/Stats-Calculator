@@ -1,5 +1,6 @@
 import statistics
 import random
+import math
 from src.operations.Descriptive_Statistics_Functions import StatisticsFunctions
 from src.randomOps.randomNumberWithSeed import randomNumSeed
 from src.RandomGenerator import RandomGenerator
@@ -25,20 +26,23 @@ class PopulationSamplingFunctions:
         sample_size = len(sample_list)
         sample_mean = numpy.mean(sample_list)
         sample_std = sem(sample_list)
-        degrees_freedom = sample_size - 1
-        confidence_interval = t.interval(confidence, degrees_freedom, sample_std)
-        return confidence_interval
+        conf = sample_std * t.ppf((1 + confidence) / 2., sample_size-1)
+        return sample_mean-conf, sample_mean, sample_mean+conf
 
     @staticmethod
     # Margin of Error
-    def margin_of_error(input_list):
-        return sem(input_list)
+    def margin_of_error(input_list, significance_level):
+        sample_size = len(input_list)
+        z_score = scipy.stats.norm.ppf(significance_level)
+        std = sem(sample_list)
+        margin_error = z_score * (std/math.sqrt(sample_size))
+        return margin_error
 
     @staticmethod
     # Cochran’s Sample Size Formula
-    def cochrans(input_list):
+    def cochran(input_list):
         error = sem(input_list)
-        gstd = stats.gstd(input_list)
+        gstd = spicy.stats.gstd(input_list)
         z = stats.szcore(input_list)
         x = (((z ** 2) * .25) / (error ** 2))
         return int(x)
@@ -46,10 +50,8 @@ class PopulationSamplingFunctions:
     @staticmethod
     # Sample Size Given a Confidence Interval and Width
     def sample_size(input_list):
-        # confidence = 0.05
         error = sem(input_list)
         std = stats.gstd(input_list)
-        # z = stats.zscore(input_list)
-        z = 1.96
+        z = stats.zscore(input_list)
         n = ((z * std) / error) ** 2
         return int(n)
