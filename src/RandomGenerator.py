@@ -8,7 +8,7 @@ class RandomGenerator:
         return randomNumber.randomNum(first, last).getResult()
 
     def randomNumSeed(self, first, last, seed):
-        return randomNumberWithSeed.randomNumSeed(first, last, seed).getNum()
+        return randomNumberWithSeed.randomNumSeed(first, last, seed).getResult()
 
     def randomNumsSeed(self, first, last, n, seed):
         return randomNumbersWithSeed.randomNumsSeed(first, last, n, seed).getResult()
