@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.com/af428/calc2.svg?branch=master)](https://travis-ci.com/af428/calc2)
-
+[![Build Status](https://travis-ci.com/af428/calc2.svg?branch=master)](https://travis-ci.com/af428/calc2) [![Coverage Status](https://coveralls.io/repos/github/af428/Stats-Calculator/badge.svg?branch=master)](https://coveralls.io/github/af428/Stats-Calculator?branch=master)
+ 
 # Stats Calculator
 * Stats Calculator
     1. Properties
@@ -69,13 +69,9 @@
         * Standard Deviation - square root of the variance
         * Z-Score - raw score minus the population mean divided by the population standard deviation
     * Use functions:
-        * Use <code>import numpy</code> See example
-            * <code>np.mean()</code>
-            * <code>np.median()</code>
-            * <code>np.mode()</code>
-            * <code>np.var()</code>
-            * <code>np.std()</code>
-            * <code>.stats.zscore</code> Make sure to <code>from scipy import stats</code>
+        * Import numpy
+        * Import Statistics
+        * Import Scipy
 
 # Contributers
 * [Alexandra Feeley](https://github.com/af428)

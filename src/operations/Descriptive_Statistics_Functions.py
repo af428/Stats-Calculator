@@ -4,12 +4,14 @@ from src.operations.multiplication import Multiplication
 from src.operations.square import Square
 from src.operations.square_root import SquareRoot
 from src.operations.subtraction import Subtraction
-
+from src.randomOps.randomNumberWithSeed import randomNumSeed
+from src.RandomGenerator import RandomGenerator
+from src.randomOps import randomNumber, randomNumberWithSeed, randomNumbersWithSeed, randItemFromList, randItemsFromList, randItemFromListSeed, randItemsFromListSeed
 
 import statistics
 
 
-class StatisticsFunctions():
+class StatisticsFunctions:
 
     @staticmethod
     def mean(data):
@@ -35,4 +37,11 @@ class StatisticsFunctions():
     def standardDeviation(data):
         result = statistics.stdev(data)
         return result
+
+    @staticmethod
+    def z_Score(data):
+        x = randomNumbersWithSeed.randNumsSeed(data)
+        mean = statistics.mean(data)
+        stDev = statistics.stdev(data)
+        return ( x - mean) / stDev
 
