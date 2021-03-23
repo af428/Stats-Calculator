@@ -4,12 +4,8 @@ from src.randomOps import randomNumber, randomNumberWithSeed, randomNumbersWithS
 
 class RandomGenerator:
 
-    def __init__(self):
-        pass
-
     def randomNum(self, first, last):
-        randomNumber.randomNum.generateRand(first, last)
-        return randomNumber.randomNum.getResult()
+        return randomNumber.randomNum(first, last).getResult()
 
     def randomNumSeed(self, first, last, seed):
         return randomNumberWithSeed.randomNumSeed(first, last, seed).getNum()
