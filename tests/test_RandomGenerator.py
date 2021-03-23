@@ -9,6 +9,11 @@ class RandomGeneratorTestCase(unittest.TestCase):
         print('')
         print('setUp')
 
+    def test_random_number(self):
+        print("- Random Number Generator Test -")
+        print("Random Number: ")
+        print(self.Randomizer.randomNum(0, 25))
+
 
 if __name__ == '__main__':
     unittest.main()
