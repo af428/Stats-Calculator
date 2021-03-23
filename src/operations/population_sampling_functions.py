@@ -42,7 +42,7 @@ class PopulationSamplingFunctions:
     # Cochran’s Sample Size Formula
     def cochran(input_list):
         error = sem(input_list)
-        gstd = spicy.stats.gstd(input_list)
+        gstd = scipy.stats.gstd(input_list)
         z = stats.szcore(input_list)
         x = (((z ** 2) * .25) / (error ** 2))
         return int(x)
